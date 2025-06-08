@@ -372,19 +372,72 @@ header, footer, section, article, aside, nav {
     background-color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.height {
-    height: 2000px;
+.scroll-image {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
+.scroll-image_sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.scroll-image_sticky img {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scroll-image_text-block {
+    padding: 100px 200px 100px 0px;
+    width: 55%;
+}
+
+.question-block {
+    background-color: white;
+}
+
+.question-block_container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 62px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-block_text-content .text-block_title {
+    color: black;
+}
+
+.question-block_text-content .text-block_subtitle {
+    color: red;
+}
+
+.question-block_text-content .text-block_description {
+    color: black;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #242426;
+    color: white;
+    height: 70px;
+}
+
+.footer-line_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
