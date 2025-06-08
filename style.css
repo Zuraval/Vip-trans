@@ -53,7 +53,7 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-header, main, footer, section, article, aside, nav {
+header, footer, section, article, aside, nav {
     display: flex;
 }
 
@@ -71,6 +71,33 @@ header, main, footer, section, article, aside, nav {
 }
 
 /*-----------------------------------------*/
+
+.title-text {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1em;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.subtitle-text {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.description-text {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+    color: white;
+}
 
 .header-container {
     display: flex;
@@ -256,6 +283,102 @@ header, main, footer, section, article, aside, nav {
     line-height: 28px;
     width: 40%;
 }
+
+.more-info {
+    display: flex;
+}
+
+.more-info_text {
+    width: 70%;
+    background-color:red;
+}
+
+.more-info_text-block {
+    padding: 63px 100px 63px 23%;
+}
+
+.more-info_image {
+    background-image: url(./assets/scania.jpg);
+    background-size: cover;
+    flex: 1;
+}
+
+.text-block_button_white {
+    padding: 20px 30px;
+    color: #242426;
+    background-color: white;
+    transition: 0.3s ease;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-block_button_white:hover {
+    color: white;
+    background-color: #242426;
+}
+
+.services-info {
+    display: flex;
+}
+
+.services-info_list {
+    flex: 1;
+    background-color: #3a3a3c;
+}
+
+.text-block_button-red {
+    padding: 20px 30px;
+    color: white;
+    background-color: red;
+    transition: 0.3s ease;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-block_button-red:hover {
+    background-color: #3e3e40;
+}
+
+.services-info_text {
+    width: 55%;
+    background-color:#242426;
+}
+
+.services-info_text-block {
+    padding: 63px 40px 63px 29.3%;
+}
+
+.services-info_list_text-block {
+    padding: 63px 30px 63px 40px;
+}
+
+.services-info_list ul li .subtitle-text{
+    margin: 0px;
+}
+
+.services-info_list ul li a {
+    border-bottom: 1px solid gray;
+    padding: 15px 30px;
+    transition: 0.3s ease;
+    width: 100%;
+    display: flex;
+}
+
+.services-info_list ul li:last-child a {
+    border-bottom: none;
+}
+
+.services-info_list ul li a:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
 
 
 
