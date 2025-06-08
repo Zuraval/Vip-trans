@@ -294,7 +294,7 @@ header, footer, section, article, aside, nav {
 }
 
 .more-info_text-block {
-    padding: 63px 100px 63px 23%;
+    padding: 80px 100px 80px 23%;
 }
 
 .more-info_image {
@@ -345,11 +345,11 @@ header, footer, section, article, aside, nav {
 }
 
 .services-info_text-block {
-    padding: 63px 40px 63px 29.3%;
+    padding: 80px 40px 80px 29.3%;
 }
 
 .services-info_list_text-block {
-    padding: 63px 30px 63px 40px;
+    padding: 80px 30px 80px 40px;
 }
 
 .services-info_list ul li .subtitle-text{
@@ -358,7 +358,7 @@ header, footer, section, article, aside, nav {
 
 .services-info_list ul li a {
     border-bottom: 1px solid gray;
-    padding: 15px 30px;
+    padding: 9px 30px;
     transition: 0.3s ease;
     width: 100%;
     display: flex;
