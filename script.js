@@ -8,3 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+document.querySelectorAll('.scroll-image_text-block__buttons .text-block_button_white').forEach(button => {
+  button.addEventListener('click', () => {
+
+    document.querySelectorAll('.scroll-image_text-block__buttons .text-block_button_white').forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+  });
+});
