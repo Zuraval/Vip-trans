@@ -13,13 +13,18 @@
 
     <header>
       <div class="header-container">
-        <div class="header-logo">
-          <a href="/"><img src="./assets/logo.png" /></a>
+        <div class="header-mobi">
+          <div class="header-logo">
+            <a href="/"><img src="./assets/logo.png" /></a>
+          </div>
+          <button class="burger" id="burger">
+            <div class="bar"></div>
+          </button>
         </div>
         <nav class="header-navigation">
           <ul class="navigation-list">
-            <a href="#"><li>Сервис и ремонт</p> грузовых автомобилей</li></a>
-            <a href="#"><li>Услуги</li></a>
+            <a href="/truck-service.html"><li>Грузовой автосервис</li></a>
+            <a href="/cargo-transportation.html"><li>Перевозка грузов</li></a>
             <a href="#"><li>О нас</li></a>
             <a href="#"><li>Контакты</li></a>
           </ul>
@@ -83,21 +88,21 @@
         </div>
         <div class="services-info_list">
           <div class="services-info_list_text-block">
-            <div class="text-block_title title-text">КОМПЛЕКСНЫЕ УСЛУГИ</div>
+            <div class="text-block_title title-text">ПРИМЕРЫ УСЛУГ</div>
             <ul>
-              <li><a class="subtitle-text">Услуга</a></li>
-              <li><a class="subtitle-text">Услуга</a></li>
-              <li><a class="subtitle-text">Услуга</a></li>
-              <li><a class="subtitle-text">Услуга</a></li>
-              <li><a class="subtitle-text">Услуга</a></li>
-              <li><a class="subtitle-text">Услуга</a></li>
+              <li><a href="./cargo-transportation.html" class="subtitle-text">Перевозка грузовым автотранспортом</a></li>
+              <li><a href="./cargo-transportation.html" class="subtitle-text">Железнодорожные перевозки</a></li>
+              <li><a href="./truck-service.html" class="subtitle-text">Автомойка для грузовых автомобилей</a></li>
+              <li><a href="./truck-service.html" class="subtitle-text">Подбор и закупка запчастей</a></li>
+              <li><a href="./cargo-transportation.html" class="subtitle-text">Предоставление подвижного состава</a></li>
+              <li><a href="./cargo-transportation.html" class="subtitle-text">Оплата ЖД тарифов по СНГ</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="scroll-image">
         <div class="scroll-image_sticky">
-          <img src="./assets/поезд.jpg" />
+          <img src="./assets/шаман.jpg" />
         </div>
         <div class="scroll-image_text-block">
           <div class="scroll-image_text-block__title title-text">Рассчитайте стоимость</div>
@@ -146,11 +151,15 @@
           <div style="position:relative;overflow:hidden;" class="contacts-block__card__vidget" >
             <a href="https://yandex.ru/maps/11190/sovetsky/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Советский</a>
             <a href="https://yandex.ru/maps/11190/sovetsky/house/ulitsa_lenina_7/YkoYcwBoQUUEQFhrfX93c3VrbA==/?ll=63.579082%2C61.362922&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 7 — Яндекс Карты</a>
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=63.579082%2C61.362922&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIxOTYwODUwEooB0KDQvtGB0YHQuNGPLCDQpdCw0L3RgtGLLdCc0LDQvdGB0LjQudGB0LrQuNC5INCw0LLRgtC-0L3QvtC80L3Ri9C5INC-0LrRgNGD0LMg4oCUINCu0LPRgNCwLCDQodC-0LLQtdGC0YHQutC40LksINGD0LvQuNGG0LAg0JvQtdC90LjQvdCwLCA3IgoNslB-QhW0c3VC&z=17" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=63.579082%2C61.362922&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIxOTYwODUwEooB0KDQvtGB0YHQuNGPLCDQpdCw0L3RgtGLLdCc0LDQvdGB0LjQudGB0LrQuNC5INCw0LLRgtC-0L3QvtC80L3Ri9C5INC-0LrRgNGD0LMg4oCUINCu0LPRgNCwLCDQodC-0LLQtdGC0YHQutC40LksINGD0LvQuNGG0LAg0JvQtdC90LjQvdCwLCA3IgoNslB-QhW0c3VC&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
           </div>
         </div>
         <div class="contacts-block__info">
           <div class="contacts-block__info__container">
+            <div class="contacts-block__info__title__arrow-top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"></path></svg>
+              ОФИС
+            </div>
             <div class="contacts-block__info__title title-text">CONTACTS</div>
             <div class="contacts-block__info__subtitle subtitle-text">4578 MARMORA ROAD,GLASGOW D04 89GR</div>
             <div class="contacts-block__info__title description-text">We aim to make our service as reasonably priced, as possible, allowing multiple SMBs to use our trucking for good!</div>
@@ -158,6 +167,10 @@
               <div class="contacts-block__info__buttons__vk">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m3.08 14.27h-1.46c-.55 0-.72-.45-1.69-1.44c-.88-.83-1.26-.95-1.47-.95c-.29 0-.38.08-.38.5v1.31c0 .35-.11.57-1.04.57c-1.54 0-3.25-.94-4.45-2.67c-1.81-2.54-2.3-4.46-2.3-4.84c0-.21.07-.41.49-.41h1.47c.37 0 .51.16.65.56c.72 2.1 1.92 3.9 2.41 3.9c.19 0 .27-.09.27-.55V10.1c-.05-.98-.58-1.07-.58-1.42c0-.18.14-.34.37-.34h2.29c.31 0 .42.16.42.54v2.89c0 .31.13.42.23.42c.18 0 .34-.11.67-.45c1.05-1.17 1.8-2.98 1.8-2.98c.1-.21.26-.41.65-.41h1.43c.44 0 .54.23.44.54c-.18.85-1.96 3.36-1.94 3.36c-.16.25-.22.36 0 .65c.15.21.66.65 1 1.04c.62.71 1.1 1.3 1.23 1.71c.11.41-.09.62-.51.62z" fill="currentColor"/></svg>
               </div>
+            </div>
+            <div class="contacts-block__info__title__arrow-bottom">
+              СЕРВИС
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"></path></svg>
             </div>
           </div>
         </div>
