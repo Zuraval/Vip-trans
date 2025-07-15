@@ -789,6 +789,31 @@ header, footer, section, article, aside, nav {
 
 @media (max-width: 568px) {
 
+    .subtitle-text-slide {
+        width: 80%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .services-info_list_text-block {
+        padding: 70px 20px;
+    }
+
+    .services-info_list ul li a {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .more-info_image {
+        display: none;
+    }
+
+    .more-info_text {
+        width: 100%;
+    }
+
     .title-text {
         font-size: 31px;
     }
@@ -808,7 +833,7 @@ header, footer, section, article, aside, nav {
 
     .subtitle-text-slide {
         font-size: 15px;
-        width: 40%;
+        width: 70%;
     }
 
     .text-block_button_white {
