@@ -6,6 +6,7 @@
   <title>Вип-транс</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+  <script src="https://unpkg.com/imask "></script>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -34,6 +35,20 @@
     </header>
 
     <main>
+
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <h2>Обратная связь</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="tel" placeholder="Телефон" name="phone" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <div id="closeModalBtn" class="close-btn"></div>
+        </div>
+      </div>
+
       <div class="hero-homepage">
         <div class="hero-homepage-container">
           <div class="swiper">
@@ -72,7 +87,7 @@
             <div class="text-block_title title-text">НАШЕ ОБЯЗАТЕЛЬСТВО</div>
             <div class="text-block_subtitle subtitle-text">БЕЗОПАСНОСТЬ — ДВИЖУЩАЯ СИЛА ВСЕГО, ЧТО МЫ ДЕЛАЕМ В TRUCKY TRANSPORTATION COMPANY. НАША ОСНОВНАЯ ЦЕННОСТЬ БЕЗОПАСНОСТИ «БЕЗОПАСНОСТЬ — ЭТО РАБОТА КАЖДОГО — ВСЕГДА» — ЭТО ОБЯЗАТЕЛЬСТВО, КОТОРОЕ НАЧИНАЕТСЯ С ВЕРХНЕЙ ЧАСТИ НАШЕГО РУКОВОДСТВА С НАШИХ ОСНОВАТЕЛЕЙ.</div>
             <div class="text-block_description description-text">Trucky Transportation Company стремится быть ответственным партнером сообщества и делиться дорогой с автомобилистами безопасным и вежливым образом. Благодаря этому обязательству Trucky Transportation Company продолжает оставаться одним из самых безопасных и прибыльных перевозчиков с бортовой платформой в отрасли. Если у вас есть какие-либо вопросы, свяжитесь с нашим отделом безопасности по телефону 1-800-895-8456</div>
-            <button class="text-block_button"><div class="text-block_button_white">Узнать больше</div></button>
+            <button class="text-block_button open-modal-btn"><div class="text-block_button_white">Узнать больше</div></button>
           </div>
         </div>
         <div class="more-info_image"></div>
@@ -83,7 +98,7 @@
             <div class="text-block_title title-text">КЛЮЧИ К УСПЕХУ</div>
             <div class="text-block_subtitle subtitle-text">ХОТЯ БОЛЬШИНСТВО ЛОГИСТИЧЕСКИХ И ТРАНСПОРТНЫХ КОМПАНИЙ, С КОТОРЫМИ МЫ СТОЛКНУЛИСЬ, РАБОТАЮТ С ОДНИМ ТИПОМ ДОСТАВКИ, МЫ ДЕЛАЕМ ВСЕ!</div>
             <div class="text-block_description description-text">Когда компании необходимо перевезти свои товары из пункта А в пункт Б, мы берем на себя всю заботу о самой транспортировке, грузовой и грузовой документации и всех других рутинных задачах!</div>
-            <button class="text-block_button"><div class="text-block_button-red">Узнать больше</div></button>
+            <button class="text-block_button open-modal-btn"><div class="text-block_button-red">Узнать больше</div></button>
           </div>
         </div>
         <div class="services-info_list">
@@ -111,14 +126,15 @@
             <button class="text-block_button_white">ЖД перевозка</button>
           </div>
           <div class="scroll-image_text-block__inputs">
-            <input placeholder="Город отправления"/>
-            <input placeholder="Город получения"/>
-            <input placeholder="Все (кг)"/>
-            <input placeholder="Наименование груза"/>
-            <input placeholder="Имя"/>
-            <input placeholder="Телефон"/>
+            <input placeholder="Город отправления" name="departure"/>
+            <input placeholder="Город получения" name="arrival"/>
+            <input placeholder="Все (кг)" name="weight"/>
+            <input placeholder="Наименование груза" name="cargo_name"/>
+            <input placeholder="Имя" name="name"/>
+            <input placeholder="Телефон" name="phone"/>
           </div>
-          <button class="text-block_button_white">Узнать стоимость</button>
+          <div id="errorMessages" style="color: red; margin-top: 5px;"></div>
+          <button class="text-block_button_white" id="submitBtn">Узнать стоимость</button>
         </div>
       </div>
       <!-- <div class="question-block">
