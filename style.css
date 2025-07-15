@@ -905,6 +905,8 @@ header, footer, section, article, aside, nav {
 
 .service__card {
     width: 48%;
+    position: relative;
+    padding-bottom: 65px;
 }
 
 .service__card img {
@@ -915,6 +917,10 @@ header, footer, section, article, aside, nav {
 
 .service__card__button {
     width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .service__card__title.title-text {
