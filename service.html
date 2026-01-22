@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вип-транс - Услуги</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask "></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div class="header-container">
+        <div class="header-mobi">
+          <div class="header-logo">
+            <a href="/"><img src="./assets/logo.png" /></a>
+          </div>
+          <button class="burger" id="burger">
+            <div class="bar"></div>
+          </button>
+        </div>
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+            <a href="/service.html"><li>Грузовой автосервис</li></a>
+            <a href="/transportation.html"><li>Перевозка грузов</li></a>
+            <a href="/contacts.html"><li>Контакты</li></a>
+          </ul>
+          <div class="header-nav-button"></div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <h2>Обратная связь</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="tel" placeholder="Телефон" name="phone" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <div id="closeModalBtn" class="close-btn"></div>
+        </div>
+      </div>
+
+      <div class="service container">
+        <div class="service__first-title title-text"></div>
+        <div class="service__container-first">
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (9).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Ремонт грузовых автомобилей любой сложности</div>
+            <div class="service__card__subtitle subtitle-text"> Это комплекс профессиональных услуг, направленных на восстановление работоспособности и надежности техники, независимо от степени износа или характера поломки. Такая услуга особенно востребована среди владельцев коммерческого транспорта, где бесперебойная работа техники напрямую влияет на эффективность бизнеса.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (6).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Регулировка развал-схождения лазерным оборудованием</div>
+            <div class="service__card__subtitle subtitle-text">Это современная высокоточная услуга технического обслуживания автомобилей, направленная на восстановление и коррекцию углов установки колёс в соответствии с заводскими параметрами производителя.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.09 (11).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Автомойка для грузовых автомобилей</div>
+            <div class="service__card__subtitle subtitle-text">Это специализированная услуга по очистке транспортных средств большого размера (фуры, самосвалы, тягачи, автопоезда и др.) от дорожной пыли, грязи, масляных пятен, солевых реагентов и других загрязнений. Эта услуга важна не только для поддержания внешнего вида техники, но и для продления срока её службы.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (1).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Подбор и закупка запчастей</div>
+            <div class="service__card__subtitle subtitle-text">Предназначена для клиентов, которым необходимо оперативно и качественно подобрать оригинальные или неоригинальные комплектующие для ремонта автомобилей. Мы предлагаем помощь в поиске необходимых деталей, проверку их совместимости с вашим транспортным средством и организацию закупки от надежных поставщиков.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-line">
+        <p class="footer-line_text">2026 Вип-транс. Все права защищены.</p>
+      </div>
+    </footer>
+    
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

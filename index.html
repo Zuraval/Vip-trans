@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вип-транс</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+  <script src="https://unpkg.com/imask "></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div class="header-container">
+        <div class="header-mobi">
+          <div class="header-logo">
+            <a href="/"><img src="./assets/logo.png" /></a>
+          </div>
+          <button class="burger" id="burger">
+            <div class="bar"></div>
+          </button>
+        </div>
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+            <a href="/service.html"><li>Грузовой автосервис</li></a>
+            <a href="/transportation.html"><li>Перевозка грузов</li></a>
+            <a href="/contacts.html"><li>Контакты</li></a>
+          </ul>
+          <div class="header-nav-button"></div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <h2>Обратная связь</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="tel" placeholder="Телефон" name="phone" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <div id="closeModalBtn" class="close-btn"></div>
+        </div>
+      </div>
+
+      <div class="hero-homepage">
+        <div class="hero-homepage-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide_container-1">
+                  <span class="title-text-slide">КОМПАНИЯ КОТОРОЙ МОЖНО ДОВЕРЯТЬ</span>
+                  <span class="subtitle-text-slide">Компания Вип Транс имеет собственный сервис по ремонту и обслуживанию грузовой техники.</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide_container-2">
+                  <span class="title-text-slide">КОМПАНИЯ КОТОРОЙ МОЖНО ДОВЕРЯТЬ</span>
+                  <span class="subtitle-text-slide">Компания Вип Транс предоставляет услуги в сфере автомобильных грузоперевозок.</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide_container-3">
+                  <span class="title-text-slide">КОМПАНИЯ КОТОРОЙ МОЖНО ДОВЕРЯТЬ</span>
+                  <span class="subtitle-text-slide">Компания Вип Транс предоставляет услуги в сфере железнодорожных перевозок и погрузочно разгрузочный работ.</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"/></svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more-info">
+        <div class="more-info_text">
+          <div class="more-info_text-block">
+            <div class="text-block_title title-text">ООО "Вип-Транс" — ваш надежный партнер</div>
+            <div class="text-block_subtitle subtitle-text">Мы — многопрофильная компания, которая предлагает полный спектр услуг для владельцев грузового автотранспорта, логистических фирм, промышленных предприятий и предпринимателей. Наша деятельность охватывает ключевых направления: организация грузовых перевозок, а также техническое обслуживание и ремонт грузовых автомобилей.</div>
+            <div class="text-block_description description-text">Наши специалисты имеют большой опыт работы в сфере логистики и автосервиса, что гарантирует высокий уровень исполнения работ и индивидуальный подход к каждому клиенту. Мы используем современное оборудование, оригинальные запчасти и передовые технологии, чтобы соответствовать самым высоким стандартам качества.</div>
+          </div>
+        </div>
+        <div class="more-info_image"></div>
+      </div>
+      <div class="services-info">
+        <div class="services-info_text">
+          <div class="services-info_text-block">
+            <div class="text-block_title title-text">КЛЮЧИ К УСПЕХУ</div>
+            <div class="text-block_subtitle subtitle-text">ХОТЯ БОЛЬШИНСТВО ЛОГИСТИЧЕСКИХ И ТРАНСПОРТНЫХ КОМПАНИЙ, С КОТОРЫМИ МЫ СТОЛКНУЛИСЬ, РАБОТАЮТ С ОДНИМ ТИПОМ ДОСТАВКИ, МЫ ДЕЛАЕМ ВСЕ!</div>
+            <div class="text-block_description description-text">Когда компании необходимо перевезти свои товары из пункта А в пункт Б, мы берем на себя всю заботу о самой транспортировке, грузовой и грузовой документации и всех других рутинных задачах!</div>
+            <button class="text-block_button open-modal-btn"><div class="text-block_button-red">Узнать больше</div></button>
+          </div>
+        </div>
+        <div class="services-info_list">
+          <div class="services-info_list_text-block">
+            <div class="text-block_title title-text">ПРИМЕРЫ УСЛУГ</div>
+            <ul>
+              <li><a href="./transportation.html" class="subtitle-text">Перевозка грузовым автотранспортом</a></li>
+              <li><a href="./transportation.html" class="subtitle-text">Железнодорожные перевозки</a></li>
+              <li><a href="./service.html" class="subtitle-text">Автомойка для грузовых автомобилей</a></li>
+              <li><a href="./service.html" class="subtitle-text">Подбор и закупка запчастей</a></li>
+              <li><a href="./transportation.html" class="subtitle-text">Предоставление подвижного состава</a></li>
+              <li><a href="./transportation.html" class="subtitle-text">Оплата ЖД тарифов по СНГ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-image">
+        <div class="scroll-image_sticky">
+          <img src="./assets/шаман.jpg" />
+        </div>
+        <div class="scroll-image_text-block">
+          <div class="scroll-image_text-block__title title-text">Рассчитайте стоимость</div>
+          <div class="scroll-image_text-block__buttons">
+            <button class="text-block_button_white active">Авто перевозка</button>
+            <button class="text-block_button_white">ЖД перевозка</button>
+          </div>
+          <div class="scroll-image_text-block__inputs">
+            <input placeholder="Город отправления" name="departure"/>
+            <input placeholder="Город получения" name="arrival"/>
+            <input placeholder="Все (кг)" name="weight"/>
+            <input placeholder="Наименование груза" name="cargo_name"/>
+            <input placeholder="Имя" name="name"/>
+            <input placeholder="Телефон" name="phone"/>
+          </div>
+          <div id="errorMessages" style="color: red; margin-top: 5px;"></div>
+          <button class="text-block_button_white" id="submitBtn">Узнать стоимость</button>
+        </div>
+      </div>
+      <!-- <div class="question-block">
+        <div class="question-block_container">
+          <div class="question-block_text-content">
+            <div class="text-block_title title-text">КТО МЫ?</div>
+            <div class="text-block_subtitle subtitle-text">С НАШИМИ ГРУЗОВЫМИ АВТОМОБИЛЯМИ ОТ ОБЫЧНЫХ ТЯЖЕЛЫХ ДО СПЕЦИАЛИЗИРОВАННЫХ, С ОСОБЫМИ УСЛОВИЯМИ ДЛЯ СПЕЦИАЛЬНЫХ ГРУЗОВ, МЫ МОЖЕМ ДОСТАВИТЬ ВСЕ!</div>
+            <div class="text-block_description description-text">Принимая новый заказ на перевозку, мы всегда обеспечиваем первоклассное обслуживание, чистое оборудование, профессиональных водителей грузовиков, а также профессиональный бэк-офис и персонал по продажам!</div>
+            <button class="text-block_button"><div class="text-block_button-red">Узнать больше</div></button>
+          </div>
+          <div class="question-block_text-content">
+            <div class="text-block_title title-text">КТО МЫ?</div>
+            <div class="text-block_subtitle subtitle-text">С НАШИМИ ГРУЗОВЫМИ АВТОМОБИЛЯМИ ОТ ОБЫЧНЫХ ТЯЖЕЛЫХ ДО СПЕЦИАЛИЗИРОВАННЫХ, С ОСОБЫМИ УСЛОВИЯМИ ДЛЯ СПЕЦИАЛЬНЫХ ГРУЗОВ, МЫ МОЖЕМ ДОСТАВИТЬ ВСЕ!</div>
+            <div class="text-block_description description-text">Принимая новый заказ на перевозку, мы всегда обеспечиваем первоклассное обслуживание, чистое оборудование, профессиональных водителей грузовиков, а также профессиональный бэк-офис и персонал по продажам!</div>
+            <button class="text-block_button"><div class="text-block_button-red">Узнать больше</div></button>
+          </div>
+          <div class="question-block_text-content">
+            <div class="text-block_title title-text">КТО МЫ?</div>
+            <div class="text-block_subtitle subtitle-text">С НАШИМИ ГРУЗОВЫМИ АВТОМОБИЛЯМИ ОТ ОБЫЧНЫХ ТЯЖЕЛЫХ ДО СПЕЦИАЛИЗИРОВАННЫХ, С ОСОБЫМИ УСЛОВИЯМИ ДЛЯ СПЕЦИАЛЬНЫХ ГРУЗОВ, МЫ МОЖЕМ ДОСТАВИТЬ ВСЕ!</div>
+            <div class="text-block_description description-text">Принимая новый заказ на перевозку, мы всегда обеспечиваем первоклассное обслуживание, чистое оборудование, профессиональных водителей грузовиков, а также профессиональный бэк-офис и персонал по продажам!</div>
+            <button class="text-block_button"><div class="text-block_button-red">Узнать больше</div></button>
+          </div>
+        </div>
+      </div> -->
+      <div class="feedback-form">
+
+      </div>
+      <div class="contacts-block">
+        <div class="contacts-block__card">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6aa8097d9e1dfaa7b3af09744b666eeb06da338be0d33c655e7a5d21777e2cd7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="contacts-block__info">
+          <div class="contacts-block__info__container">
+            <div class="contacts-block__info__title__arrow-top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"></path></svg>
+              ОФИС
+            </div>
+            <div class="contacts-block__info__title title-text">КОНТАКТЫ</div>
+            <div class="contacts-block__info__subtitle subtitle-text">8 (922) 265 26 42 (офис) </br> 8 (963) 068 88 33 (сервис)</div>
+            <div class="contacts-block__info__title description-text">Адрес: г. Екатеринбург, ул. Бебеля 17, офис 407, компания «Вип-Транс»</div>
+            <div class="contacts-block__info__buttons">
+              <div class="contacts-block__info__buttons__vk">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m3.08 14.27h-1.46c-.55 0-.72-.45-1.69-1.44c-.88-.83-1.26-.95-1.47-.95c-.29 0-.38.08-.38.5v1.31c0 .35-.11.57-1.04.57c-1.54 0-3.25-.94-4.45-2.67c-1.81-2.54-2.3-4.46-2.3-4.84c0-.21.07-.41.49-.41h1.47c.37 0 .51.16.65.56c.72 2.1 1.92 3.9 2.41 3.9c.19 0 .27-.09.27-.55V10.1c-.05-.98-.58-1.07-.58-1.42c0-.18.14-.34.37-.34h2.29c.31 0 .42.16.42.54v2.89c0 .31.13.42.23.42c.18 0 .34-.11.67-.45c1.05-1.17 1.8-2.98 1.8-2.98c.1-.21.26-.41.65-.41h1.43c.44 0 .54.23.44.54c-.18.85-1.96 3.36-1.94 3.36c-.16.25-.22.36 0 .65c.15.21.66.65 1 1.04c.62.71 1.1 1.3 1.23 1.71c.11.41-.09.62-.51.62z" fill="currentColor"/></svg>
+              </div>
+            </div>
+            <div class="contacts-block__info__title__arrow-bottom">
+              СЕРВИС
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-block__card">
+          <div style="position:relative;overflow:hidden;" class="contacts-block__card__vidget" >
+            <a href="https://yandex.ru/maps/11190/sovetsky/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Советский</a>
+            <a href="https://yandex.ru/maps/11190/sovetsky/house/ulitsa_lenina_7/YkoYcwBoQUUEQFhrfX93c3VrbA==/?ll=63.579082%2C61.362922&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 7 — Яндекс Карты</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=63.579082%2C61.362922&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIxOTYwODUwEooB0KDQvtGB0YHQuNGPLCDQpdCw0L3RgtGLLdCc0LDQvdGB0LjQudGB0LrQuNC5INCw0LLRgtC-0L3QvtC80L3Ri9C5INC-0LrRgNGD0LMg4oCUINCu0LPRgNCwLCDQodC-0LLQtdGC0YHQutC40LksINGD0LvQuNGG0LAg0JvQtdC90LjQvdCwLCA3IgoNslB-QhW0c3VC&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-line">
+        <p class="footer-line_text">2026 Вип-транс. Все права защищены.</p>
+      </div>
+    </footer>
+    
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

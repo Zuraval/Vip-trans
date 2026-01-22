@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вип-транс - Услуги</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask "></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div class="header-container">
+        <div class="header-mobi">
+          <div class="header-logo">
+            <a href="/"><img src="./assets/logo.png" /></a>
+          </div>
+          <button class="burger" id="burger">
+            <div class="bar"></div>
+          </button>
+        </div>
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+            <a href="/service.html"><li>Грузовой автосервис</li></a>
+            <a href="/transportation.html"><li>Перевозка грузов</li></a>
+            <a href="/contacts.html"><li>Контакты</li></a>
+          </ul>
+          <div class="header-nav-button"></div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <h2>Обратная связь</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Имя" name="name" required>
+            <input type="tel" placeholder="Телефон" name="phone" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <button type="submit">Отправить</button>
+          </form>
+          <div id="closeModalBtn" class="close-btn"></div>
+        </div>
+      </div>
+
+      <div class="service container">
+        <div class="service__first-title title-text">Перевозка грузовым автотранспортом</div>
+        <div class="service__container-first">
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (10).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Перевозка щеповозом</div>
+            <div class="service__card__subtitle subtitle-text">Это специализированная техника, предназначенная для перевозки древесной щепы, пеллет, стружки и других сыпучих растительных материалов. Услуга перевозки щеповозом актуальна для предприятий лесной и деревообрабатывающей промышленности, котельных, ТЭЦ, а также организаций, использующих древесную щепу как топливо или сырьё.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (7).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Перевозка лесовозом</div>
+            <div class="service__card__subtitle subtitle-text">Это специализированная грузовая техника, предназначенная для перевозки круглых лесоматериалов (бревен), пиломатериалов и других видов древесины. Услуга перевозки лесовозом востребована в лесной и деревообрабатывающей промышленности, а также у частных предпринимателей и компаний, занимающихся заготовкой, переработкой и реализацией древесины.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (12).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Перевозка евро фурой</div>
+            <div class="service__card__subtitle subtitle-text">Это стандартный грузовик с прицепом, предназначенный для перевозки негабаритных и больших объемов грузов.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (4).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Перевозка контенеровоз</div>
+            <div class="service__card__subtitle subtitle-text">Это специализированный грузовик, предназначенный для перевозки стандартных морских и железнодорожных контейнеров различных типов и размеров.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+        </div>
+
+        <div class="service__second-title title-text">Железнодорожные перевозки</div>
+        <div class="service__container-second">
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (3).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Перевозка контенерным поездом</div>
+            <div class="service__card__subtitle subtitle-text">Это железнодорожный состав, предназначенный для перевозки стандартных сухогрузных контейнеров. Услуга перевозки контейнерным поездом обеспечивает эффективную, безопасную и экономически выгодную доставку грузов на большие расстояния — как внутри страны, так и в международном сообщении.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (5).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Предоставление крытых вагонов</div>
+            <div class="service__card__subtitle subtitle-text">Это тип железнодорожного подвижного состава, предназначенный для перевозки сухих, штучных и упакованных грузов, защищённых от атмосферных осадков и внешних воздействий. Услуга предоставления крытых вагонов направлена на клиентов, которым необходимо организовать безопасную и надёжную доставку товаров железнодорожным транспортом как внутри страны, так и в международном сообщении.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (8).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Предоставление подвижного состава</div>
+            <div class="service__card__subtitle subtitle-text">Эта услуга широко используется как в грузовых, так и в пассажирских перевозках, особенно когда у перевозчика временно не хватает собственных мощностей или требуется дополнительное оборудование для выполнения определённых задач.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+          <div class="service__card">
+            <img src="./assets/WhatsApp Image 2025-07-14 at 18.40.10 (2).jpeg" class="service__card__img" alt="услуга" />
+            <div class="service__card__title title-text">Оплата ЖД тарифов по СНГ</div>
+            <div class="service__card__subtitle subtitle-text">Перевозка грузов железнодорожным транспортом между странами СНГ требует точного расчёта и оплаты железнодорожных тарифов , которые зависят от множества факторов: маршрута, типа груза, массы, категории перевозки и других параметров. Мы оказываем полный комплекс услуг по расчёту и оплате ЖД тарифов на территории стран СНГ.</div>
+            <button class="service__card__button text-block_button-red open-modal-btn">Заказать услугу</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-line">
+        <p class="footer-line_text">2026 Вип-транс. Все права защищены.</p>
+      </div>
+    </footer>
+    
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
