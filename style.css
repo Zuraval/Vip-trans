@@ -98,12 +98,18 @@ header, footer, section, article, aside, nav {
     color: white;
 }
 
+header {
+    margin-bottom: 111.5px;
+}
+
 .header-container {
     display: flex;
     width: 100%;
     justify-content:space-around;
     align-items: center;
     background-color: #E11313;
+    position: fixed;
+    z-index: 100;
 }
 
 .burger {
@@ -316,6 +322,10 @@ header, footer, section, article, aside, nav {
     transition: 0.3s ease;
     font-size: 30px;
     font-weight: 600;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-block_button_white.active,
@@ -469,7 +479,6 @@ header, footer, section, article, aside, nav {
 
 .scroll-image_text-block__buttons {
     display: flex;
-
 }
 
 .scroll-image_text-block__buttons button {
@@ -640,6 +649,10 @@ header, footer, section, article, aside, nav {
         font-size: 15px;
     }
 
+    header {
+        margin-bottom: 222px;
+    }
+
     .header-container {
         flex-direction: column;
     }
@@ -673,6 +686,11 @@ header, footer, section, article, aside, nav {
 }
 
 @media (max-width: 991px) {
+
+    header {
+        margin-bottom: 150px;
+    }
+
     .more-info_text-block {
         padding: 50px 15px 50px 5%;
     }
@@ -719,6 +737,7 @@ header, footer, section, article, aside, nav {
     }
 
     .burger {
+      margin-top: 40px;
       top: 40%;
       right: 20px;
       display: block;
@@ -791,6 +810,14 @@ header, footer, section, article, aside, nav {
 }
 
 @media (max-width: 568px) {
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    .burger {
+        margin-top: 30px;
+    }
 
     .subtitle-text-slide {
         width: 80%;

@@ -97,7 +97,6 @@
             <div class="text-block_title title-text">КЛЮЧИ К УСПЕХУ</div>
             <div class="text-block_subtitle subtitle-text">ХОТЯ БОЛЬШИНСТВО ЛОГИСТИЧЕСКИХ И ТРАНСПОРТНЫХ КОМПАНИЙ, С КОТОРЫМИ МЫ СТОЛКНУЛИСЬ, РАБОТАЮТ С ОДНИМ ТИПОМ ДОСТАВКИ, МЫ ДЕЛАЕМ ВСЕ!</div>
             <div class="text-block_description description-text">Когда компании необходимо перевезти свои товары из пункта А в пункт Б, мы берем на себя всю заботу о самой транспортировке, грузовой и грузовой документации и всех других рутинных задачах!</div>
-            <button class="text-block_button open-modal-btn"><div class="text-block_button-red">Узнать больше</div></button>
           </div>
         </div>
         <div class="services-info_list">
@@ -118,11 +117,11 @@
         <div class="scroll-image_sticky">
           <img src="./assets/шаман.jpg" />
         </div>
-        <div class="scroll-image_text-block">
+        <form class="scroll-image_text-block" id="price-count">
           <div class="scroll-image_text-block__title title-text">Рассчитайте стоимость</div>
           <div class="scroll-image_text-block__buttons">
-            <button class="text-block_button_white active">Авто перевозка</button>
-            <button class="text-block_button_white">ЖД перевозка</button>
+            <div class="text-block_button_white active">Авто перевозка</div>
+            <div class="text-block_button_white">ЖД перевозка</div>
           </div>
           <div class="scroll-image_text-block__inputs">
             <input placeholder="Город отправления" name="departure"/>
@@ -131,10 +130,12 @@
             <input placeholder="Наименование груза" name="cargo_name"/>
             <input placeholder="Имя" name="name"/>
             <input placeholder="Телефон" name="phone"/>
+            <input placeholder="Ориентировочная дата отправки" name="date"/>
+            <input placeholder="Email" name="email"/>
           </div>
           <div id="errorMessages" style="color: red; margin-top: 5px;"></div>
-          <button class="text-block_button_white" id="submitBtn">Узнать стоимость</button>
-        </div>
+          <button class="text-block_button_white" id="submit">Узнать стоимость</button>
+        </form>
       </div>
       <!-- <div class="question-block">
         <div class="question-block_container">

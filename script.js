@@ -146,4 +146,39 @@ document.addEventListener("DOMContentLoaded", function () {
         alert('Ошибка при отправке: ' + JSON.stringify(error));
       });
   });
+
+  document.getElementById('price-count').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const activeButton = document.querySelector('.scroll-image_text-block__buttons .text-block_button_white.active');
+    const transportType = activeButton ? activeButton.textContent.trim() : 'Не выбрано';
+
+    const formDataTwo = new FormData(this);
+    const data = {
+      name: formDataTwo.get('name'),
+      departure: formDataTwo.get('departure'),
+      arrival: formDataTwo.get('arrival'),
+      weight: formDataTwo.get('weight'),
+      cargo_name: formDataTwo.get('cargo_name'),
+      date: formDataTwo.get('date'),
+      phone: formDataTwo.get('phone'),
+      email: formDataTwo.get('email'),
+      transport_type: transportType
+    };
+
+    emailjs.send('service_prcic2n', 'template_vsd28uc', data, 'TAc3O3TjZgNtm1Lg6')
+      .then(function(response) {
+        alert('Сообщение успешно отправлено!');
+        document.getElementById('price-count').reset();
+
+        const buttons = document.querySelectorAll('.scroll-image_text-block__buttons .text-block_button_white');
+        buttons.forEach((btn, idx) => {
+          btn.classList.toggle('active', idx === 0);
+        });
+      })
+      .catch(function(error) {
+        console.error('Ошибка EmailJS:', error);
+        alert('Ошибка при отправке: ' + (error.text || JSON.stringify(error)));
+      });
+  });
 });
