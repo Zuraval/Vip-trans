@@ -39,7 +39,11 @@ export default function ContactModal({ isOpen, onClose, toEmail = 'service@vip-t
     const newErrors: Record<string, string> = {}
 
     if (!form.name.trim()) newErrors.name = 'Заполните это поле'
-    if (!form.email.trim()) newErrors.email = 'Заполните это поле'
+    if (!form.email.trim()) {
+      newErrors.email = 'Заполните это поле'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      newErrors.email = 'Введите корректный email'
+    }
 
     const phoneValue = phoneRef.current?.value || ''
     const unmasked = maskRef.current?.unmaskedValue || ''

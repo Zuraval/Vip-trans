@@ -56,7 +56,11 @@ export default function HomePage() {
 
     if (!name) newErrors.name = 'Заполните это поле'
     if (!phone || phone === '+7()___-__-__') newErrors.phone = 'Заполните это поле'
-    if (!email) newErrors.email = 'Заполните это поле'
+    if (!email) {
+      newErrors.email = 'Заполните это поле'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = 'Введите корректный email'
+    }
 
     if (phoneMaskRef.current && phone && phone !== '+7()___-__-__') {
       const unmasked = phoneMaskRef.current.unmaskedValue
